@@ -10,162 +10,187 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudioMainPage</title>
   </head>
   <body class="bd">
     <!-- шапка сайту -->
     <header class="header">
-      <nav class="header-nav">
+      <div class="header-container container">
         <a class="header-logo link" href="./index.html"
           >WEB<span class="logo-studio">Studio</span></a
         >
-        <ul class="header-menu list">
-          <!-- необхідно ще додати локальні посилання на Contacts -->
-          <li><a class="header-item link" href="./index.html">Studio</a></li>
-          <li>
-            <a class="header-item link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="header-item link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="header-address">
-        <ul class="header-contacts list">
-          <li>
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
+        <nav class="header-nav">
+          <ul class="header-nav-list list">
+            <!-- необхідно ще додати локальні посилання на Contacts -->
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul class="header-contacts list">
+            <li>
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <!-- Секція 1. Ефективні рішення для бізнесу -->
       <section class="hero section">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="btn" type="button">Order Service</button>
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button class="btn" type="button">Order Service</button>
+        </div>
       </section>
       <!-- Секція 2. Переваги компанії -->
       <section class="advantages section">
-        <!-- потрібно для кращої індексації сайту. треба буде сховати в CSS  -->
-        <h2 class="section-title" hidden>Features of company</h2>
-        <ul class="features list">
-          <li>
-            <h3 class="title">Strategy</h3>
-            <p class="text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">Punctuality</h3>
-            <p class="text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">Diligence</h3>
-            <p class="text">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">Technologies</h3>
-            <p class="text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <!-- потрібно для кращої індексації сайту. треба буде сховати в CSS  -->
+          <h2 class="section-title" hidden>Features of company</h2>
+          <ul class="features list">
+            <li>
+              <h3 class="title">Strategy</h3>
+              <p class="text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">Punctuality</h3>
+              <p class="text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">Diligence</h3>
+              <p class="text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">Technologies</h3>
+              <p class="text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Секція 3. Приклад того що робить компанія -->
       <section class="works section">
-        <h2 class="section-title">What are we doing</h2>
-        <!-- height можна не задавати так як браузер вираховує сам за допомогою width. width можна не задавати бо не тексту поряд з картинками -->
-        <ul class="examples list">
-          <li>
-            <img
-              src="./images/mainpage/img-1.jpg"
-              alt="image 1"
-              width="360"
-              height="300"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/mainpage/img-2.jpg"
-              alt="image 2"
-              width="360"
-              height="300"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/mainpage/img-3.jpg"
-              alt="image 3"
-              width="360"
-              height="300"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">What are we doing</h2>
+          <!-- height можна не задавати так як браузер вираховує сам за допомогою width. width можна не задавати бо не тексту поряд з картинками -->
+          <ul class="examples list">
+            <li>
+              <img
+                src="./images/mainpage/img-1.jpg"
+                alt="image 1"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/mainpage/img-2.jpg"
+                alt="image 2"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/mainpage/img-3.jpg"
+                alt="image 3"
+                width="360"
+                height="300"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Секція 4. Команда компанії  -->
       <section class="team section">
-        <h2 class="section-title">Our Team</h2>
-        <ul class="personal list">
-          <li class="team-item">
-            <img
-              src="./images/mainpage/imgmarkguerrero.jpg"
-              alt="Mark Guerrero's photo"
-              width="264"
-            />
-            <h3 class="title">Mark Guerrero</h3>
-            <p class="text">Product Designer</p>
-          </li>
-          <li class="team-item">
-            <img
-              src="./images/mainpage/imgtomford.jpg"
-              alt="Tom Ford's photo"
-              width="264"
-            />
-            <h3 class="title">Tom Ford</h3>
-            <p class="text">Frontend Developer</p>
-          </li>
-          <li class="team-item">
-            <img
-              src="./images/mainpage/imgcamilagarcia.jpg"
-              alt="Camila Garcia's photo"
-              width="264"
-            />
-            <h3 class="title">Camila Garcia</h3>
-            <p class="text">Marketing</p>
-          </li>
-          <li class="team-item">
-            <img
-              src="./images/mainpage/imgdanielwilson.jpg"
-              alt="Daniel Wilson's photo"
-              width="264"
-            />
-            <h3 class="title">Daniel Wilson</h3>
-            <p class="text">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">Our Team</h2>
+          <ul class="personal list">
+            <li class="team-item">
+              <img
+                src="./images/mainpage/imgmarkguerrero.jpg"
+                alt="Mark Guerrero's photo"
+                width="264"
+              />
+              <h3 class="title">Mark Guerrero</h3>
+              <p class="text">Product Designer</p>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/mainpage/imgtomford.jpg"
+                alt="Tom Ford's photo"
+                width="264"
+              />
+              <h3 class="title">Tom Ford</h3>
+              <p class="text">Frontend Developer</p>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/mainpage/imgcamilagarcia.jpg"
+                alt="Camila Garcia's photo"
+                width="264"
+              />
+              <h3 class="title">Camila Garcia</h3>
+              <p class="text">Marketing</p>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/mainpage/imgdanielwilson.jpg"
+                alt="Daniel Wilson's photo"
+                width="264"
+              />
+              <h3 class="title">Daniel Wilson</h3>
+              <p class="text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- підвал сайту -->
     <footer class="footer">
-      <a class="footer-logo link" href="./index.html"
-        >WEB<span class="logo-studio">Studio</span></a
-      >
-      <p>
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <a class="footer-logo link" href="./index.html"
+          >WEB<span class="logo-studio">Studio</span></a
+        >
+        <p>
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
