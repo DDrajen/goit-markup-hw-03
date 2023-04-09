@@ -45,12 +45,12 @@ p {
   padding: 0;
   list-style: none;
 }
-img {
+.image {
   display: block;
   width: 100%;
   height: auto;
 }
-button {
+.btn {
   cursor: pointer;
   color: currentColor;
   font-family: inherit;
@@ -261,16 +261,16 @@ button {
   margin-right: auto;
   margin-bottom: 72px;
 }
-.gallery-list {
-  /* якщо потрібно буде додати ще декілька робіт */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* gap: var(--indent); */
-}
-.gallery-item {
-  /* якщо потрібно буде додати ще декілька робіт, при умові якщо до батьківсьекого підключено wrap  */
-  /* width: calc((100% - var(--indent) * var(--items)-1) / var(--items)); */
-}
+
+/* .gallery-list  */
+/* якщо потрібно буде додати ще декілька робіт */
+/* display: flex; */
+/* flex-wrap: wrap; */
+/* gap: var(--indent); */
+
+/* .gallery-item  */
+/* якщо потрібно буде додати ще декілька робіт, при умові якщо до батьківсьекого підключено wrap  */
+/* width: calc((100% - var(--indent) * var(--items)-1) / var(--items)); */
 
 /*  */
 /* Section4 TEAM*/
